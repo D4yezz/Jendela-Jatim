@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Locate</title>
-    <link rel="stylesheet" href="lokasi.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="icon" href="../assets/ikon.png" type="image/x-icon" />
     <link
@@ -15,8 +15,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body style="background-color: black">
-    <header class="position-relative" style="z-index: 999">
+  <body style="background-color: black ; font-family: 'Poppins';">
+    <!-- <header class="position-relative" style="z-index: 999">
       <nav class="navbar navbar-expand-lg d-flex p-3">
         <div class="logo container-fluid w-50">
           <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
@@ -25,7 +25,7 @@
         <div class="container-fluid w-50 justify-content-end">
           <button
             class="navbar-toggler"
-            style="background-color:#40a2e3;"
+            style="background-color: #40a2e3"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -60,7 +60,6 @@
                     class="nav-link active"
                     aria-current="page"
                     href="../index.html"
-              
                     >Home</a
                   >
                 </li>
@@ -69,16 +68,11 @@
                     class="nav-link active"
                     aria-current="page"
                     href="../index.html#destinasi"
-              
                     >Destinasi</a
                   >
                 </li>
                 <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#"
-              
+                  <a class="nav-link active" aria-current="page" href="#"
                     >Galery</a
                   >
                 </li>
@@ -87,7 +81,6 @@
                     class="nav-link active"
                     aria-current="page"
                     href="../index.html#contact"
-              
                     >Contact</a
                   >
                 </li>
@@ -95,7 +88,6 @@
                   <a
                     class="nav-link dropdown-toggle active"
                     href="#list"
-              
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -106,6 +98,125 @@
                       <a href="../index.html#destinasi" class="dropdown-item"
                         >Gunung Bromo</a
                       >
+                    </li>
+                    <li>
+                      <a href="../index.html#kawah" class="dropdown-item"
+                        >Kawah Ijen</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#tumpak" class="dropdown-item"
+                        >Air Terjun Tumpak Sewu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#balekambang" class="dropdown-item"
+                        >Pantai Balekambang</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#baluran" class="dropdown-item"
+                        >Taman Nasional Baluran</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+    <header class="position-relative" style="z-index: 999" id="atas">
+      <nav class="navbar navbar-expand-lg d-flex">
+        <div class="logo container-fluid w-50">
+          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
+        </div>
+
+        <!-- Navbar -->
+        <div class="container-fluid w-50 justify-content-end">
+          <button
+            class="navbar-toggler"
+            style="background-color: #40a2e3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
+                JendelaJatim
+              </h5>
+              <button
+              
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
+              >
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    style="color: #8fd14f"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../index.html#destinasi"
+                    style="color: #8fd14f"
+                    >Destinasi</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../galeri/gallery.html"
+                    style="color: #8fd14f"
+                    >Galery</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../index.html#contact"
+                    style="color: #8fd14f"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#list"
+                    style="color: #8fd14f"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >List Destinasi</a
+                  >
+                  <ul class="dropdown-menu" id="list">
+                    <li>
+                      <a href="../index.html#bromo" class="dropdown-item">Gunung Bromo</a>
                     </li>
                     <li>
                       <a href="../index.html#kawah" class="dropdown-item">Kawah Ijen</a>
@@ -134,170 +245,183 @@
       </nav>
     </header>
 
-    
     <!-- konten -->
-    <div class="lokasi-container">
-      <h1 class="jdl">Detail Lokasi</h1>
+    <section class="lokasi-container">
+      <h1 class="tema fw-bold text-light">Detail Lokasi</h1>
       <div class="container">
-        <div class="kartu">
-          <h1 class="title">Gunung Bromo</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180047325468!2d112.94271243448983!3d-7.942493323305342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1729000868639!5m2!1sid!2sid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <a class="klik-map" href="https://maps.app.goo.gl/Tb8LUEc9Qe2d36RA7">Go To Map</a>
-          <div class="lokasi">
-            <div class="jam">
-              <div class="header-div">
-                <h2 class="h2-judul">Jam Buka</h2>
-                <i class="fa-regular fa-clock"></i>
-              </div>
-              <div class="jam-info">
-                <h3>Senin - Minggu 24 Jam</h3>
-              </div>
-            </div>
-            <div class="tiket-container">
-              <div class="header-div">
-                <h2 class="h2-judul">Tiket</h2>
-                <i class="fa-solid fa-ticket"></i>
+        <div class="container-kartu row">
+          <div class="kartu col-12" style="background-image: url(../assets/.jpg); background-size: cover;">
+            <h1 class="judul">Gunung Bromo</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180047325468!2d112.94271243448983!3d-7.942493323305342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1729000868639!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a class="klik-map" href="https://maps.app.goo.gl/Tb8LUEc9Qe2d36RA7"
+              >Go To Map</a
+            >
+            <div class="pembungkus-lokasi">
+              <div class="lokasi">
+                <div class="judul-lokasi">
+                  <h2>Jam Buka</h2>
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="info">
+                  <h3>Senin - Minggu 24 Jam</h3>
+                </div>
               </div>
               <div class="tiket">
-                <h3>Hari Biasa: Rp.29.000</h3>
-                <h3>Hari Libur: Rp.34.000</h3>
+                <div class="judul-lokasi">
+                  <h2>Tiket</h2>
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div class="info">
+                  <h3>Hari Biasa: Rp.29.000</h3>
+                  <h3>Hari Libur: Rp.34.000</h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="kartu">
-          <h1 class="title">Kawah Ijen</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.34018797572!2d114.23211340307446!3d-8.058823085985914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1444d90985159%3A0x39537d020e069533!2sWisata%20Kawah%20Ijen!5e0!3m2!1sid!2sid!4v1729091974270!5m2!1sid!2sid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <a class="klik-map" href="Vhttps://maps.app.goo.gl/h7z3kuHFahZQFb9n6">Go To Map</a>
-          <div class="lokasi">
-            <div class="jam">
-              <div class="header-div">
-                <h2 class="h2-judul">Jam Buka</h2>
-                <i class="fa-regular fa-clock"></i>
-              </div>
-              <div class="jam-info">
-                <h3>Senin - Minggu 24 Jam</h3>
-              </div>
-            </div>
-            <div class="tiket-container">
-              <div class="header-div">
-                <h2 class="h2-judul">Tiket</h2>
-                <i class="fa-solid fa-ticket"></i>
+          <div class="kartu col-12">
+            <h1 class="judul">Kawah Ijen</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.34018797572!2d114.23211340307446!3d-8.058823085985914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1444d90985159%3A0x39537d020e069533!2sWisata%20Kawah%20Ijen!5e0!3m2!1sid!2sid!4v1729091974270!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              class="klik-map"
+              href="Vhttps://maps.app.goo.gl/h7z3kuHFahZQFb9n6"
+              >Go To Map</a
+            >
+            <div class="pembungkus-lokasi">
+              <div class="lokasi">
+                <div class="judul-lokasi">
+                  <h2>Jam Buka</h2>
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="info">
+                  <h3>Senin - Minggu 24 Jam</h3>
+                </div>
               </div>
               <div class="tiket">
-                <h3>Hari Biasa: Rp.5.000</h3>
-                <h3>Hari Libur: Rp.7.000</h3>
+                <div class="judul-lokasi">
+                  <h2>Tiket</h2>
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div class="info">
+                  <h3>Hari Biasa: Rp.5.000</h3>
+                  <h3>Hari Libur: Rp.7.000</h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="kartu">
-          <h1 class="title">Air Terjun Tumpak Sewu</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.3633587936445!2d112.91529074442745!3d-8.230212599999982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd614085869da41%3A0x4a94cc5f06772982!2sAir%20Terjun%20Tumpak%20Sewu!5e0!3m2!1sid!2sid!4v1729092656391!5m2!1sid!2sid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <a class="klik-map" href="https://maps.app.goo.gl/K1ZDTLBMcQGv8Jky7">Go To Map</a>
-          <div class="lokasi">
-            <div class="jam">
-              <div class="header-div">
-                <h2 class="h2-judul">Jam Buka</h2>
-                <i class="fa-regular fa-clock"></i>
-              </div>
-              <div class="jam-info">
-                <h3>Senin - Minggu</h3>
-                <h3>Pukul 07.00 - 15.00</h3>
-              </div>
-            </div>
-            <div class="tiket-container">
-              <div class="header-div">
-                <h2 class="h2-judul">Tiket</h2>
-                <i class="fa-solid fa-ticket"></i>
+          <div class="kartu col-12">
+            <h1 class="judul">Air Terjun Tumpak Sewu</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.3633587936445!2d112.91529074442745!3d-8.230212599999982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd614085869da41%3A0x4a94cc5f06772982!2sAir%20Terjun%20Tumpak%20Sewu!5e0!3m2!1sid!2sid!4v1729092656391!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a class="klik-map" href="https://maps.app.goo.gl/K1ZDTLBMcQGv8Jky7"
+              >Go To Map</a
+            >
+            <div class="pembungkus-lokasi">
+              <div class="lokasi">
+                <div class="judul-lokasi">
+                  <h2>Jam Buka</h2>
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="info">
+                  <h3>Senin - Minggu</h3>
+                  <h3>Pukul 07.00 - 15.00</h3>
+                </div>
               </div>
               <div class="tiket">
-                <h3>Setiap Hari</h3>
-                <h3>Rp.10.000 - Rp.20.000</h3>
+                <div class="judul-lokasi">
+                  <h2>Tiket</h2>
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div class="info">
+                  <h3>Setiap Hari</h3>
+                  <h3>Rp.10.000 - Rp.20.000</h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="kartu">
-          <h1 class="title">Pantai Balekambang</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15787.922183432662!2d112.52907138458589!3d-8.403570816156611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78a9458651084f%3A0x6b8da077d5b83e2f!2sPantai%20Balekambang!5e0!3m2!1sid!2sid!4v1729093673495!5m2!1sid!2sid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <a class="klik-map" href="https://maps.app.goo.gl/CikxRQe1DidWuGif7">Go To Map</a>
-          <div class="lokasi">
-            <div class="jam">
-              <div class="header-div">
-                <h2 class="h2-judul">Jam Buka</h2>
-                <i class="fa-regular fa-clock"></i>
-              </div>
-              <div class="jam-info">
-                <h3>Senin - Minggu 24 Jam</h3>
-              </div>
-            </div>
-            <div class="tiket-container">
-              <div class="header-div">
-                <h2 class="h2-judul">Tiket</h2>
-                <i class="fa-solid fa-ticket"></i>
+          <div class="kartu col-12">
+            <h1 class="judul">Pantai Balekambang</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15787.922183432662!2d112.52907138458589!3d-8.403570816156611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78a9458651084f%3A0x6b8da077d5b83e2f!2sPantai%20Balekambang!5e0!3m2!1sid!2sid!4v1729093673495!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a class="klik-map" href="https://maps.app.goo.gl/CikxRQe1DidWuGif7"
+              >Go To Map</a
+            >
+            <div class="pembungkus-lokasi">
+              <div class="lokasi">
+                <div class="judul-lokasi">
+                  <h2>Jam Buka</h2>
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="info">
+                  <h3>Senin - Minggu 24 Jam</h3>
+                </div>
               </div>
               <div class="tiket">
-                <h3>Setiap Hari</h3>
-                <h3>Rp.20.000</h3>
+                <div class="judul-lokasi">
+                  <h2>Tiket</h2>
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div class="info">
+                  <h3>Setiap Hari</h3>
+                  <h3>Rp.20.000</h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="kartu">
-          <h1 class="title">Taman Nasional Baluran</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63237.11525582916!2d114.34880131110751!3d-7.861572576758391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1249454d7c085%3A0x67067c7ed3eced4b!2sTaman%20Nasional%20Baluran!5e0!3m2!1sid!2sid!4v1729094207187!5m2!1sid!2sid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <a class="klik-map" href="https://maps.app.goo.gl/mL9ka5ST28fhy9zd8">Go To Map</a>
-          <div class="lokasi">
-            <div class="jam">
-              <div class="header-div">
-                <h2 class="h2-judul">Jam Buka</h2>
-                <i class="fa-regular fa-clock"></i>
-              </div>
-              <div class="jam-info">
-                <h3>Senin - Minggu</h3>
-                <h3>Pukul 07.30 - 16.00</h3>
-              </div>
-            </div>
-            <div class="tiket-container">
-              <div class="header-div">
-                <h2 class="h2-judul">Tiket</h2>
-                <i class="fa-solid fa-ticket"></i>
+          <div class="kartu col-12">
+            <h1 class="judul">Taman Nasional Baluran</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63237.11525582916!2d114.34880131110751!3d-7.861572576758391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1249454d7c085%3A0x67067c7ed3eced4b!2sTaman%20Nasional%20Baluran!5e0!3m2!1sid!2sid!4v1729094207187!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a class="klik-map" href="https://maps.app.goo.gl/mL9ka5ST28fhy9zd8"
+              >Go To Map</a
+            >
+            <div class="pembungkus-lokasi">
+              <div class="lokasi">
+                <div class="judul-lokasi">
+                  <h2>Jam Buka</h2>
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="info">
+                  <h3>Senin - Minggu</h3>
+                  <h3>Pukul 07.30 - 16.00</h3>
+                </div>
               </div>
               <div class="tiket">
-                <h3>Hari Biasa: Rp.5.000</h3>
-                <h3>Hari Libur: Rp.7.500</h3>
+                <div class="judul-lokasi">
+                  <h2>Tiket</h2>
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div class="info">
+                  <h3>Hari Biasa: Rp.5.000</h3>
+                  <h3>Hari Libur: Rp.7.500</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
   <script src="../js/bootstrap.bundle.js"></script>
 </html>

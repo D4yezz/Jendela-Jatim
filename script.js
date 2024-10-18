@@ -55,3 +55,13 @@ function showSlider(type) {
     next.click();
   }, timeAutoNext);
 }
+
+document.querySelectorAll('.offcanvas .nav-link .btn-close').forEach(link => {
+  link.addEventListener('click', function() {
+    e.preventDefault();
+    const offcanvasElement = document.querySelector('#navbarOffcanvasLg');
+    const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+    offcanvasInstance.hide();
+  });
+});
+

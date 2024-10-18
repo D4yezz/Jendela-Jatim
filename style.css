@@ -34,6 +34,12 @@ nav .logo span {
   color: var(--warna-two);
 }
 
+.container-fluid .offcanvas {
+  /* background-color: rgba(255, 255, 255, 0.258); */
+  width: 50%  !important;
+
+}
+
 .navbar .container-fluid .offcanvas-body {
   background-color: transparent;
   right: 0;
@@ -403,6 +409,9 @@ a {
   .carousel .list .item .content .title {
     font-size: 30px;
   }
+  .carousel .list .item .content .balek {
+    font-size: 35px;
+  }
 }
 
 .carousel::after {
@@ -431,7 +440,7 @@ a {
   text-decoration: none;
   text-align: center;
   line-height: 45px;
-  color:black;
+  color: black;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -449,11 +458,12 @@ a {
 
 .container-destinasi {
   display: flex;
+  /* background-color: greenyellow; */
   justify-content: space-between;
   width: 100%;
-  height: 20%;
+  height: 40%;
   padding: 50px 0;
-  margin: 50px 0;
+  margin: 0 0 200px 0;
   /* background-color: pink; */
 }
 
@@ -468,14 +478,19 @@ a {
 
 .destinasi .jdl {
   font-size: 2em;
+  height: auto;
   margin-bottom: 20px;
   color: var(--warna-two);
 }
 
 .destinasi .desk {
   font-size: 1.2em;
-  margin-bottom: 40px;
+  /* background-color: pink; */
+  margin-bottom: 20px;
   color: white;
+  max-height: 200px; /* Atur tinggi tetap sesuai kebutuhan */
+  overflow-y: auto; /* Aktifkan scroll vertikal */
+  padding-right: 10px; /* Tambahkan padding untuk menghindari overlap dengan scrollbar */
 }
 
 .destinasi .img-konten {
@@ -574,7 +589,7 @@ a {
 /* baluran */
 .img-konten .baluran-satu {
   background-image: url(assets/baluran1.jpg);
-  background-position: center ;
+  background-position: center;
   background-size: cover;
 }
 .img-konten .baluran-dua {
@@ -620,8 +635,9 @@ a {
 
 .container-kontak {
   justify-content: space-around;
+  width: 95%;
   height: 100%;
-padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .card-kontak {
@@ -629,7 +645,7 @@ padding-bottom: 100px;
   color: var(--warna-one);
   justify-content: center;
   align-content: center;
-  margin: 20px 30px;
+  margin: 20px;
   padding: 5px;
   border: 2px solid rgb(87, 87, 87);
   width: 50%;
@@ -692,38 +708,36 @@ padding-bottom: 100px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  transition: 0.4s, 0.4s ;
-  -webkit-transition: 0.4s, 0.4s ;
-  -moz-transition: 0.4s, 0.4s ;
-  -ms-transition: 0.4s, 0.4s ;
-  -o-transition: 0.4s, 0.4s ;
+  transition: 0.4s, 0.4s;
+  -webkit-transition: 0.4s, 0.4s;
+  -moz-transition: 0.4s, 0.4s;
+  -ms-transition: 0.4s, 0.4s;
+  -o-transition: 0.4s, 0.4s;
 }
 .card-kontak form button:hover {
   background-color: #000;
   color: var(--warna-one);
-
 }
 
-
 .lokasi {
-
   margin: 10px 0;
 }
 
 .lokasi .teks-lokasi {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: auto;             
-  gap: 5px;  
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 5px;
 }
 
 .lokasi .kotak {
   background-color: var(--warna-one);
-  width: 80%;
+  max-width: 200px;
+  width: 90%;
   height: 90%;
   padding: 10px 10px 25px 10px;
-  /*top: 20px;
-  */margin: auto;
+  /*top: 20px;*/
+  margin: auto;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -734,19 +748,18 @@ padding-bottom: 100px;
   -o-border-radius: 5px;
 }
 
-.lokasi .teks-lokasi{
-
+.lokasi .teks-lokasi {
   margin: auto;
   width: 90%;
   height: 50%;
 }
-.lokasi .teks-lokasi h3{
-font-size: 1.3rem;
-color: black;
+.lokasi .teks-lokasi h3 {
+  font-size: 1.3rem;
+  color: black;
 }
-.lokasi .teks-lokasi h4{
-font-size: 1rem;
-color: rgb(255, 255, 255);
+.lokasi .teks-lokasi h4 {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
 }
 
 .lokasi .teks-lokasi i {
@@ -756,19 +769,16 @@ color: rgb(255, 255, 255);
 }
 
 .lokasi .gmaps {
-
-
   width: 80%;
   height: 40%;
   border: 4px solid var(--warna-one);
-  margin: 40px auto;
+  margin: 70px auto;
 }
 
 .lokasi .gmaps iframe {
   width: 100%;
   height: 100%;
 }
-
 
 /* footer */
 footer {
@@ -782,11 +792,11 @@ footer {
   /* margin-top: 100px; */
 }
 
-footer .container-footer {
-
-  width: 100%;
+footer .containerr-footer {
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
 }
-
 
 footer h3 {
   font-size: 1.4rem;
@@ -794,9 +804,8 @@ footer h3 {
 }
 
 .teks-footer {
-
   width: 30%;
-  margin: 20px;
+  margin: 40px 40px 40px 0;
 }
 
 .teks-footer img {
@@ -804,23 +813,25 @@ footer h3 {
   width: 30%;
 }
 
-.container-footer .list-kota {
-
-  justify-content: space-around ;
-  margin-top: 20px;
+.containerr-footer .list-kota {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px auto;
   width: 70%;
   height: 80%;
   display: flex;
 }
 
-.d-flex .footer-kota, .footer-kabupaten {
+.containerr-footer .footer-kota,
+.footer-kabupaten {
   list-style: none;
   width: 50%;
 }
 
 .list-kota ul li {
   padding: 3px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .list-kota ul li a {
@@ -833,20 +844,169 @@ footer h3 {
 }
 
 .list-kota ul li a:hover {
-
   color: rgb(0, 0, 0);
 }
 
-
-
-
-
 /* footer selesai */
+
+.lokasi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000000; /* Warna latar belakang yang lebih terang */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lokasi-container h1 {
+  font-size: 4rem;
+}
+
+.kartu {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(87, 87, 87);
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  max-width: 300px;
+  margin: 40px 0;
+  transition: transform 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.kartu .judul {
+  color: var(--warna-two);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.kartu:hover {
+  transform: translateY(-10px);
+}
+
+.kartu h1 {
+  font-size: 1.5rem;
+  color: var(--warna-one);
+  margin: 10px;
+}
+
+.kartu iframe {
+  width: 80%;
+  height: 200px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.kartu .klik-map {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--warna-two);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 40px auto;
+  width: 50%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.kartu .pembungkus-lokasi {
+  padding: 10px;
+}
+
+.kartu .lokasi,
+.kartu .tiket {
+  margin: 10px 0;
+}
+
+.kartu .lokasi h2,
+.kartu .tiket h2 {
+  font-size: 1.2rem;
+  color: var(--warna-two);
+}
+
+.kartu .lokasi h3,
+.kartu .tiket h3 {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.pembungkus-lokasi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: black; 
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pembungkus-lokasi .lokasi,
+.pembungkus-lokasi .tiket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pembungkus-lokasi .judul-lokasi,
+.pembungkus-lokasi .info {
+  display: flex;
+  align-items: center;
+}
+
+.pembungkus-lokasi .judul-lokasi h2,
+.pembungkus-lokasi .info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.pembungkus-lokasi .judul-lokasi i,
+.pembungkus-lokasi .info i {
+  margin-left: 10px;
+  color: var(--warna-one);
+}
+
+/* Responsive lokasi */
+@media (max-width: 768px) {
+  .pembungkus-lokasi {
+    padding: 10px;
+  }
+
+  .pembungkus-lokasi .lokasi,
+  .pembungkus-lokasi .tiket {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 /* Responsive untuk layar kecil */
 
 @media screen and (max-width: 768px) {
-
   .destinasi .img-konten {
     width: 90vw;
     height: 50vh;
@@ -862,7 +1022,14 @@ footer h3 {
     width: 90%;
     height: 50%;
   }
-  
+
+  .containerr-footer .list-kota {
+    display: block;
+  }
+  .footer-kabupaten {
+    margin-right: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* Style untuk layar laptop dan lebih besar */
@@ -896,5 +1063,10 @@ footer h3 {
     width: 100%;
     height: auto;
     box-shadow: 0 0 0px var(--warna-one);
+  }
+
+  .card-kontak {
+    margin: auto;
+    width: 90%;
   }
 }

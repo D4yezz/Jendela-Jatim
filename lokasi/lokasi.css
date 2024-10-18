@@ -101,7 +101,7 @@ nav .logo span {
 
 .kartu {
   padding: 30px;
-  margin: 80px;
+  margin: 180px;
   background-color: var(--color-two);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -132,13 +132,17 @@ h2 {
 
 .lokasi-container {
   width: 70%;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
   /* transform: translate(0); */
+}
+
+.lokasi-container .containerr {
+  width: 100%;
 }
 
 .lokasi-container h1 {
@@ -263,3 +267,11 @@ iframe {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 } */
+
+@media (max-width: 880px) {
+  .kartu {
+    margin: auto; /* Kurangi margin untuk layar kecil */
+    padding: 20px; /* Sesuaikan padding jika perlu */
+    width: 120%; /* Pastikan lebar menyesuaikan dengan layar */
+  }
+}
