@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html {
+    --body-clr:#f6f9fe;
+    --primary-clr:#05555c;
+    --primary-light-clr:#eaf3fa;
+    --links-clr:#186f78;
+    --text-clr:#3f7277;
+    --warna-one: #40a2e3;
+    --warna-two: #8fd14f;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.gallery {
+    width: 100%;
+    padding: 30px 8%;
+    background-color: black;
+}
+
+.gallery .section-head {
+    max-width: 700px;
+    margin: 0px auto 25px;
+    text-align: center;
+}
+
+.section-head h1{
+    position: relative;
+    letter-spacing: 4px;
+    font-size: 4rem;
+    margin: 10px 0;
+    color: var(--warna-one);
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.section-head h3{
+    color: white;
+    font-family: "Poppins";
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.button-class {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.button-class .buttn{
+    font-family: "Poppins";
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--warna-one);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.button-class .buttn:hover{
+    background-color: var(--primary-clr);
+    color: white;
+}
+
+.button-class .buttn.nyala {
+    background-color: var(--warna-two);
+    color: white;
+}
+
+div.gallerykami {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallerykami .itemm {
+    position: relative;
+    margin: 4px;
+    width: calc(33.33% - 8px);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.itemm p{
+    order: 1;
+    text-align: left;
+    font-size: 2rem;
+    color: var(--body-clr);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    max-width: 20px;
+margin-right: 20px;
+}
+
+.itemm img{
+    width: 400px;
+    height: 215px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+div.gallerykami .itemm:hover img{
+    transform: scale(1.18);
+}
+
+.itemm .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    left: 0;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(5, 85, 92, 0.5);
+    color: var(--body-clr);
+    padding: 15px;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+
+.itemm:hover .overlay{
+    opacity: 1;
+}
+
+.itemm .overlay a{
+    order: 2;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid var(--body-clr);
+    color: var(--body-clr);
+    text-decoration: none;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.itemm .overlay a:hover{
+    background-color: var(--body-clr);
+    color: var(--primary-clr);
+}
+
+@media(max-width: 1024px){
+    div.gallerykami .itemm{
+        width: calc(50% - 8px);
+    }
+}
+
+@media(max-width: 600px){
+    div.gallerykami .itemm{
+        width: 100%;
+        margin: 4px 0px;
+    }
+}

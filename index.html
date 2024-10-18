@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JendelaJatim</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/ikon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="position-relative" style="z-index: 999" id="atas">
+      <nav class="navbar navbar-expand-lg d-flex">
+        <div class="logo container-fluid w-50">
+          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
+        </div>
+
+        <!-- Navbar -->
+        <div class="container-fluid w-50 justify-content-end">
+          <button
+            class="navbar-toggler"
+            style="background-color: #40a2e3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
+                JendelaJatim
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
+              >
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    style="color: #8fd14f"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#destinasi"
+                    style="color: #8fd14f"
+                    >Destinasi</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="galeri/gallery.html"
+                    style="color: #8fd14f"
+                    >Galery</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#contact"
+                    style="color: #8fd14f"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#list"
+                    style="color: #8fd14f"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >List Destinasi</a
+                  >
+                  <ul class="dropdown-menu" id="list">
+                    <li>
+                      <a href="#bromo" class="dropdown-item">Gunung Bromo</a>
+                    </li>
+                    <li>
+                      <a href="#kawah" class="dropdown-item">Kawah Ijen</a>
+                    </li>
+                    <li>
+                      <a href="#tumpak" class="dropdown-item"
+                        >Air Terjun Tumpak Sewu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#balekambang" class="dropdown-item"
+                        >Pantai Balekambang</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#baluran" class="dropdown-item"
+                        >Taman Nasional Baluran</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- carousel -->
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <div class="item">
+            <img src="assets/bromo kompres.jpg" />
+            <div class="content">
+              <div class="author">KABUPATEN MALANG</div>
+              <div class="title">GUNUNG</div>
+              <div class="topic">BROMO</div>
+              <div class="des">
+                Nikmati matahari terbit dan pemandangan kawah aktif di Gunung
+                Bromo, dengan lanskap vulkanik yang ikonik.
+              </div>
+              <div class="buttons">
+                <button
+                  onclick="document.getElementById('bromo').scrollIntoView();"
+                >
+                  SEE MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/kawah kompres.jpg" />
+            <div class="content">
+              <div class="author">KABUPATEN BANYUWANGI</div>
+              <div class="title">KAWAH</div>
+              <div class="topic">IJEN</div>
+              <div class="des">
+                Saksikan fenomena api biru dan danau kawah asam terbesar di
+                Kawah Ijen, destinasi pendakian yang menakjubkan.
+              </div>
+              <div class="buttons">
+                <button
+                  onclick="document.getElementById('kawah').scrollIntoView();"
+                >
+                  SEE MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/tumpakbg.jpg" />
+            <div class="content">
+              <div class="author">KABUPATEN LUMAJANG</div>
+              <div class="title">AIR TERJUN</div>
+              <div class="topic">TUMPAK SEWU</div>
+              <div class="des">
+                Air Terjun Tumpak Sewu, setinggi 120 meter, menawarkan panorama
+                alam spektakuler di tengah hutan hijau.
+              </div>
+              <div class="buttons">
+                <button
+                  onclick="document.getElementById('tumpak').scrollIntoView();"
+                >
+                  SEE MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/balekambang kompres.jpg" />
+            <div class="content">
+              <div class="author">KABUPATEN MALANG</div>
+              <div class="title">PANTAI</div>
+              <div class="topic">BALEKAMBANG</div>
+              <div class="des">
+                Pantai Balekambang memukau dengan pura di atas batu karang dan
+                pantai berpasir putih yang indah. .
+              </div>
+              <div class="buttons">
+                <button
+                  onclick="document.getElementById('balekambang').scrollIntoView();"
+                >
+                  SEE MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/baluran kompres.jpg" />
+            <div class="content">
+              <div class="author">KABUPATEN SITUBONDO</div>
+              <div class="title">TAMAN</div>
+              <div class="topic">BALURAN</div>
+              <div class="des">
+                Taman Nasional Baluran menghadirkan savana ala Afrika dengan
+                satwa liar seperti banteng dan rusa.
+              </div>
+              <div class="buttons">
+                <button
+                  onclick="document.getElementById('baluran').scrollIntoView();"
+                >
+                  SEE MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <div class="item">
+            <img src="assets/bromo kompres.jpg" />
+            <div class="content">
+              <div class="title">Gunung Bromo</div>
+              <div class="description">Matahari terbit, kawah aktif.</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/kawah kompres.jpg" />
+            <div class="content">
+              <div class="title">Kawah Ijen</div>
+              <div class="description">Api biru, danau asam.</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/tumpakbg.jpg" />
+            <div class="content">
+              <div class="title">Air Terjun Tumpak Sewu</div>
+              <div class="description">Air terjun, hutan hijau.</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/balekambang kompres.jpg" />
+            <div class="content">
+              <div class="title">Pantai Balekambang</div>
+
+              <div class="description">Pura karang, pantai indah.</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/baluran kompres.jpg" />
+            <div class="content">
+              <div class="title">Taman Nasional Baluran</div>
+              <div class="description">Savana, satwa liar eksotis.</div>
+            </div>
+          </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+      </div>
+    </main>
+    <!-- Akhir dari div class="carousel" -->
+
+    <!-- tombol keatas -->
+    <a href="#atas" class="top-tbl"> <i class="fa fa-arrow-up"></i></a>
+
+    <!-- Section Destinasi -->
+    <section class="destinasi vh-500" id="destinasi">
+      <div class="container-destinasi row vh-100" id="bromo">
+        <div class="teks-destinasi col-lg-6 col-12 order-lg-1 order-2">
+          <h2 class="jdl fs-1 fw-bold">Keindahan Gunung Bromo</h2>
+          <p class="desk">
+            Gunung Bromo sangat berkaitan erat dengan penganut agama hindu.
+            Konon berdasarkan cerita telah terjadi peperangan pada masa kerajaan
+            Majapahit dan akhirnya penduduk pribumi melarikan diri untuk mencari
+            tempat tinggal baru yang sebagian menuju pulau Bali dan sebagian
+            menuju gunung bromo. Nama Bromo sendiri diambil dari bahasa
+            sanskerta “Brahma” yang berarti dewa utama dari agama hindu. Oleh
+            sebab itu gunung bromo/brahma dipercaya sebagai gunung suci
+            oleh suku tengger.
+          </p>
+          <a href="lokasi/lokasi.html">See More</a>
+        </div>
+        <div class="img-konten col-lg-6 col-12 order-lg-2 order-1">
+          <div class="img-satu bromo-satu"></div>
+          <div class="bungkus-img">
+            <div class="img-dua bromo-dua"></div>
+            <div class="img-tiga bromo-tiga"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-destinasi row vh-100" id="kawah">
+        <div class="teks-destinasi col-lg-6 col-12 order-lg-2 order-2">
+          <h2 class="jdl fs-1 fw-bold">Kawah Ijen</h2>
+          <p class="desk">
+            Terbentuknya Kawah Ijen terjadi pada 70 ribu tahun lalu. Dahulunya,
+            Kawah Ijen adalah kaldera dari Gunung Ijen Purba yang ada sejak 300
+            ribu tahun lalu. Namun pada 70 ribu tahun, Gunung Ijen Purba meletus
+            dahsyat. Sehingga memunculkan kaldera dengan diameter 15 kilometer.
+            Akibat ledakan Gunung Api Ijen Purba terbentuk lah kaldera dan
+            muncul beberapa gunung api. Jumlahnya mencapai 22 gunung api.
+            Munculnya Blue flame dikarena tekanan gas yang berinteraksi dengan
+            belerang. Keluarnya H2S dipermukaan dengan suhu tinggi, menimbulkan
+            api dengan warna biru. Sehingga kemudian dijuluki dengan api biru.
+          </p>
+          <a href="lokasi/lokasi.html">See More</a>
+        </div>
+        <div class="img-konten col-lg-6 col-12 order-lg-1 order-1">
+          <div class="img-satu kawah-satu"></div>
+          <div class="bungkus-img">
+            <div class="img-dua kawah-dua"></div>
+            <div class="img-tiga kawah-tiga"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-destinasi row vh-100" id="tumpak">
+        <div class="teks-destinasi col-lg-6 col-12 order-lg-1 order-2">
+          <h2 class="jdl fs-1 fw-bold">Air Terjun Tumpak Sewu</h2>
+          <p class="desk">
+            Mengenai asal-usul aliran airnya, Tumpak Sewu terbentuk di aliran
+            Sungai Glidih yang kemudian berhulu di Gunung Semeru. Mendalami
+            asal-usul penamaannya, dalam bahasa Jawa Kuno, tumpak artinya Sabtu
+            dan sewu memiliki makna seribu. Penamaan sewu dimiliki lantaran
+            aliran air di Tumpak Sewu terdiri dari beberapa bagian dan tidak
+            berkurang walau musim kemarau.
+          </p>
+          <a href="lokasi/lokasi.html">See More</a>
+        </div>
+        <div class="img-konten col-lg-6 col-12 order-lg-2 order-1">
+          <div class="img-satu tumpak-satu"></div>
+          <div class="bungkus-img">
+            <div class="img-dua tumpak-dua"></div>
+            <div class="img-tiga tumpak-tiga"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-destinasi row vh-100" id="balekambang">
+        <div class="teks-destinasi col-lg-6 col-12 order-lg-2 order-2">
+          <h2 class="jdl fs-1 fw-bold">Pantai Balekambang</h2>
+          <p class="desk">
+            Pantai Balekambang dikabarkan pertama kali dibuka oleh Syaikh Abdul
+            Jalil dari Yogyakarta. Pantai ini mulai berkembang dan disinggahi
+            masyarakat luas tahun 1978, setelah adanya pembukaan akses jalan
+            yang dilakukan Kades Srigonco Tukiran. Nama Balekambang kian dikenal
+            setelah secara resmi dibuka sebagai salah satu tempat wisata oleh
+            Bupati Malang, Eddy Slamet pada 1983. Saat itu, jalannya masih
+            berupa jalan makadam. Pantai ini diresmikan pula sebagai tempat
+            perkemahan pramuka Kabupaten Malang.
+          </p>
+          <a href="lokasi/lokasi.html">See More</a>
+        </div>
+        <div class="img-konten col-lg-6 col-12 order-lg-1 order-1">
+          <div class="img-satu bale-satu"></div>
+          <div class="bungkus-img">
+            <div class="img-dua bale-dua"></div>
+            <div class="img-tiga bale-tiga"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-destinasi row vh-100" id="baluran">
+        <div class="teks-destinasi col-lg-6 col-12 order-lg-1 order-2">
+          <h2 class="jdl fs-1 fw-bold">Taman Nasional Baluran</h2>
+          <p class="desk">
+            Sebelum tahun 1928 AH. Loedeboer, seorang pemburu kebangsaan Belanda
+            yang memiliki daerah Konsesi perkebunan di Labuhan Merak dan Gunung
+            Mesigit, pernah singgah di Baluran. Dia telah menaruh perhatian dan
+            meyakini bahwa Baluran mempunyai nilai penting untuk perlindungan
+            satwa, khususnya jenis mamalia besar. Pada tahun 1930 KW. Dammerman
+            yang menjabat sebagai Direktur Kebun Raya Bogor mengusulkan perlunya
+            Baluran ditunjuk sebagai hutan lindung. Pada tahun 1937 Gubernur
+            Jenderal Hindia Belanda menetapkan Baluran sebagai Suaka Margasatwa.
+          </p>
+          <a href="lokasi/lokasi.html">See More</a>
+        </div>
+        <div class="img-konten col-lg-6 col-12 order-lg-2 order-1">
+          <div class="img-satu baluran-satu"></div>
+          <div class="bungkus-img">
+            <div class="img-dua baluran-dua"></div>
+            <div class="img-tiga baluran-tiga"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="kontak row vw-100 vh-500" id="contact">
+      <div class="container-kontak row mx-auto">
+        <div class="card-kontak col-lg-6 col-12">
+          <h1 class="fs-1 fw-semibold" style="text-align: center">
+            Contact US
+          </h1>
+          <form action="" method="get" class="kontak-form">
+            <div class="form-grup">
+              <label for="name">Name :</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name.."
+                required
+              />
+            </div>
+            <div class="form-grup">
+              <label for="email">Email :</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-grup">
+              <label for="title">Subject :</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Title.."
+                required
+              />
+            </div>
+            <div class="form-grup">
+              <label for="massage">Message :</label>
+              <textarea
+                name="massage"
+                id="massage"
+                rows="5"
+                placeholder="Type Here.."
+                required
+              ></textarea>
+            </div>
+            <div class="mx-auto w-100 d-flex">
+              <button type="submit" class="btn-kontak">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="lokasi col-lg-6 col-12">
+          <div class="teks-lokasi">
+            <div class="email kotak">
+              <i class="fa fa-envelope"></i>
+
+              <h3>Email</h3>
+              <h4>jendela@gmail.com</h4>
+            </div>
+            <div class="phone kotak">
+              <i class="fa fa-phone"></i>
+
+              <h3>Phone Number</h3>
+              <h4>+6288 9999 444</h4>
+            </div>
+            <div class="wa kotak">
+              <i class="fa fa-whatsapp"></i>
+              <h3>Whatsapp</h3>
+              <h4>0897-1234-000</h4>
+            </div>
+            <div class="loc kotak">
+              <i class="fa fa-map-marker"></i>
+
+              <h3>Location Office</h3>
+              <h4>
+                Jl. Teluk Pacitan, Arjosari, Kec. Blimbing, Kota Malang, Jawa
+                Timur 65126
+              </h4>
+            </div>
+          </div>
+          <div class="gmaps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.756633957541!2d112.6616437!3d-7.936097999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6299ed2c476ad%3A0xfba1cc2ab944bab!2sSMK%20Negeri%208%20Kota%20Malang!5e1!3m2!1sid!2sid!4v1729092888558!5m2!1sid!2sid"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer d-flex justify-content-space-between">
+        <div class="teks-footer pertama">
+          <h3 class="fw-semibold">
+            Jendela<span style="color: white">Jatim</span>
+          </h3>
+          <img
+            src="assets/Logo Provinsi Jawa Timur (PNG-480p) - FileVector69.png"
+            alt=""
+          />
+        </div>
+        <div class="list-kota">
+          <ul class="footer-kota">
+            <h3>Kota</h3>
+            <li><a href="https://maps.app.goo.gl/tdfX6rx5q36uU2tm9">Surabaya</a></li>
+            <li><a href="https://maps.app.goo.gl/AaGXYKUpAjp85V8d8">Malang</a></li>
+            <li><a href="https://maps.app.goo.gl/CNcUumMZZotyFEM27">Banyuwangi</a></li>
+            <li><a href="https://maps.app.goo.gl/MuTZVq5mgdtxtoWp7">Pasuruan</a></li>
+            <li><a href="https://maps.app.goo.gl/1uip6KMYbBJtp7tW8">Pacitan</a></li>
+          </ul>
+          <ul class="footer-kabupaten">
+            <h3>Kabupaten</h3>
+            <li><a href="https://maps.app.goo.gl/3RuahyAXQdgZN3Ns8">Kabupaten Malang</a></li>
+            <li><a href="https://maps.app.goo.gl/1vqRyixiaRGVhMkZ9">Kabupaten Bangkalan</a></li>
+            <li><a href="https://maps.app.goo.gl/wDWWZjaC5aXaVP1D9">Kabupaten Banyuwangi</a></li>
+            <li><a href="https://maps.app.goo.gl/dN27zwE7MitDnibP6">Kabupaten Jember</a></li>
+            <li><a href="https://maps.app.goo.gl/39fjq6fPFNJ38rNB7">Kabupaten Lamongan</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
+</html>

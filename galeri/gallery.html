@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="galeri.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="icon" href="../assets/ikon.png" type="image/x-icon" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header
+      class="position-relative"
+      style="z-index: 999; background-color: #000000"
+    >
+      <nav class="navbar navbar-expand-lg d-flex">
+        <div class="logo container-fluid w-50">
+          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
+        </div>
+
+        <!-- Navbar -->
+        <div class="container-fluid w-50 justify-content-end">
+          <button
+            class="navbar-toggler"
+            style="background-color:#40a2e3;"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
+                JendelaJatim
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
+              >
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    style="color: #8fd14f"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html#destinasi"
+                    style="color: #8fd14f"
+                    >Destinasi</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    style="color: #8fd14f"
+                    >Galery</a
+                  >
+                </li>
+                <li class="nav-item pe-3" id="navigasi">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html#contact"
+                    style="color: #8fd14f"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#list"
+                    style="color: #8fd14f"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >List Destinasi</a
+                  >
+                  <ul class="dropdown-menu" id="list">
+                    <li>
+                      <a href="../index.html#bromo" class="dropdown-item"
+                        >Gunung Bromo</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#kawah" class="dropdown-item"
+                        >Kawah Ijen</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#tumpak" class="dropdown-item"
+                        >Air Terjun Tumpak Sewu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#balekambang" class="dropdown-item"
+                        >Pantai Balekambang</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../index.html#baluran" class="dropdown-item"
+                        >Taman Nasional Baluran</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- konten galeri -->
+    <section class="gallery">
+      <div class="section-head">
+        <h1>JAWA TIMUR GALLERY</h1>
+        <h3>Enjoy Your Destiny</h3>
+      </div>
+
+      <main class="main-container">
+        <!-- tombol section -->
+        <div class="button-class">
+          <button class="buttn nyala" data-filter="*">Semua</button>
+          <button class="buttn" data-filter=".beach">Pantai</button>
+          <button class="buttn" data-filter=".mount">Gunung</button>
+          <button class="buttn" data-filter=".fall">Air Terjun</button>
+        </div>
+
+        <!-- tombol section end -->
+
+        <!-- galeri section start -->
+        <div class="gallerykami">
+          <!-- card 1 start -->
+          <div class="itemm beach">
+            <img src="pantai/papumabeach.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Pantai_Papuma">LIHAT</a>
+              <p>Papuma Beach</p>
+            </div>
+          </div>
+          <!-- card 1 end -->
+
+          <!-- card 2 start -->
+          <div class="itemm mount">
+            <img src="gunung/Arjunomount.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Gunung_Arjuno">LIHAT</a>
+              <p>Arjuno Mountain</p>
+            </div>
+          </div>
+          <!-- card 2 end -->
+
+          <!-- card 3 start -->
+          <div class="itemm fall">
+            <img src="terjun/nglirip.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Air_Terjun_Nglirip"
+                >LIHAT</a
+              >
+              <p>Nglirip Waterfall</p>
+            </div>
+          </div>
+          <!-- card 3 end -->
+
+          <!-- card 4 start -->
+          <div class="itemm fall">
+            <img src="terjun/dlundung.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://jv.wikipedia.org/wiki/Grojogan_Dlundung"
+                >LIHAT</a
+              >
+              <p>Dlundung Waterfall</p>
+            </div>
+          </div>
+          <!-- card 4 end -->
+
+          <!-- card 5 start -->
+          <div class="itemm beach">
+            <img src="pantai/rajegwesi.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Pantai_Rajegwesi">LIHAT</a>
+              <p>Rajegwesi Beach</p>
+            </div>
+          </div>
+          <!-- card 5 end -->
+
+          <!-- card 3 start -->
+          <div class="itemm mount">
+            <img src="gunung/kelud.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Gunung_Kelud">LIHAT</a>
+              <p>Kelud Mountain</p>
+            </div>
+          </div>
+          <!-- card 3 end -->
+
+          <!-- card 6 start -->
+          <div class="itemm mount">
+            <img src="gunung/semeru2.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Gunung_Semeru">LIHAT</a>
+              <p>Semeru Mountain</p>
+            </div>
+          </div>
+          <!-- card 6 end -->
+
+          <!-- card 7 start -->
+          <div class="itemm fall">
+            <img src="terjun/ciblungan.jpeg" alt="ciblungan" />
+            <div class="overlay">
+              <a href="https://g.co/kgs/DT3nXDr">LIHAT</a>
+              <p>Ciblungan Waterfall</p>
+            </div>
+          </div>
+          <!-- card 7 end -->
+
+          <!-- card 8 start -->
+          <div class="itemm beach">
+            <img src="pantai/telukhijau.jpeg" alt="teluk hijau" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Teluk_Hijau">LIHAT</a>
+              <p>Teluk Hijau Beach</p>
+            </div>
+          </div>
+          <!-- card 8 end -->
+
+          <!-- card 9 start -->
+          <div class="itemm beach">
+            <img src="pantai/Sukamade.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Taman_Nasional_Meru_Betiri"
+                >LIHAT</a
+              >
+              <p>Sukamade Beach</p>
+            </div>
+          </div>
+          <!-- card 9 end -->
+
+          <!-- card 10 start -->
+          <div class="itemm mount">
+            <img src="gunung/kawi.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Gunung_Kawi">LIHAT</a>
+              <p>Kawi Mountain</p>
+            </div>
+          </div>
+          <!-- card 10 end -->
+
+          <!-- card 1 mount start -->
+          <div class="itemm fall">
+            <img src="terjun/kapasbiru.jpeg" alt="" />
+            <div class="overlay">
+              <a
+                href="https://id.wikipedia.org/wiki/Air_Terjun_Kapas_Biru#:~:text=Air%20Terjun%20Kapas%20Biru%20atau,namun%20diperkirakan%20sekitar%20100%20meter."
+                >LIHAT</a
+              >
+              <p>Kapas Biru Waterfall</p>
+            </div>
+          </div>
+          <!-- card 1 mount end -->
+
+          <!-- card 2 mount start -->
+          <div class="itemm fall">
+            <img src="terjun/sriti.jpeg" alt="sriti" />
+            <div class="overlay">
+              <a
+                href="https://id.wikipedia.org/wiki/Air_Terjun_Coban_Sriti#:~:text=Air%20Terjun%20Coban%20Sriti%20atau,terjun%20tertinggi%20yang%20dimiliki%20Indonesia."
+                >LIHAT</a
+              >
+              <p>Sriti Waterfall</p>
+            </div>
+          </div>
+          <!-- card 2 mount end -->
+
+          <div class="itemm beach">
+            <img src="pantai/watuleter.jpg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Pantai_Watu_Leter"
+                >LIHAT</a
+              >
+              <p>Watu Leter Beach</p>
+            </div>
+          </div>
+
+          <!-- card 4 mount start -->
+          <div class="itemm mount">
+            <img src="gunung/raung.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Gunung_Raung">LIHAT</a>
+              <p>Raung Mountain</p>
+            </div>
+          </div>
+          <!-- card 4 mount end -->
+
+          <!-- card 5 mount start -->
+          <div class="itemm beach">
+            <img src="pantai/Goa Cina.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Pantai_Goa_Cina">LIHAT</a>
+              <p>Goa Cina Beach</p>
+            </div>
+          </div>
+          <!-- card 5 mount end -->
+
+          <!-- card 5 mount start -->
+          <div class="itemm fall">
+            <img src="terjun/madakaripura.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Air_terjun_Madakaripura"
+                >LIHAT</a
+              >
+              <p>Mada Karipura Waterfall</p>
+            </div>
+          </div>
+          <!-- card 5 mount end -->
+
+          <!-- card 5 mount start -->
+          <div class="itemm beach">
+            <img src="pantai/sendiki.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Pantai_Sendiki">LIHAT</a>
+              <p>Sendiki Beach</p>
+            </div>
+          </div>
+          <!-- card 5 mount end -->
+
+          <!-- card 5 mount start -->
+          <div class="itemm fall">
+            <img src="terjun/talun.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Air_Terjun_Telun_Berasap"
+                >LIHAT</a
+              >
+              <p>Talun Waterfall</p>
+            </div>
+          </div>
+          <!-- card 5 mount end -->
+
+          <!-- card 5 mount start -->
+          <div class="itemm beach">
+            <img src="pantai/PULAU MERAH (1).jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Pantai_Pulau_Merah"
+                >LIHAT</a
+              >
+              <p>Pulau Merah Beach</p>
+            </div>
+          </div>
+          <!-- card 5 mount end -->
+
+          <!-- card 5 mount start -->
+          <div class="itemm fall">
+            <img src="terjun/rondo.jpeg" alt="" />
+            <div class="overlay">
+              <a href="https://id.wikipedia.org/wiki/Air_Terjun_Coban_Rondo"
+                >LIHAT</a
+              >
+              <p>Rondo Waterfall</p>
+            </div>
+          </div>
+          <!-- card 5 mount end -->
+        </div>
+        <!-- galeri section end -->
+      </main>
+    </section>
+
+    <!-- JQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- isotope filter link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+      var $galleryContainer = $(".gallerykami").isotope({
+        itemSelector: ".itemm",
+        layoutMode: "fitRows",
+      });
+
+      $(".button-class .buttn").on("click", function () {
+        $(".button-class .buttn").removeClass("nyala");
+        $(this).addClass("nyala");
+
+        var value = $(this).attr("data-filter");
+        $galleryContainer.isotope({
+          filter: value,
+        });
+      });
+    </script>
+  </body>
+  <script src="../js/bootstrap.bundle.js"></script>
+</html>
