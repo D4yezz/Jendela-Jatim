@@ -841,7 +841,7 @@ a {
 /* footer */
 footer {
   display: flex;
-  background-color: var(--warna-two);
+  background-color: var(--warna-one);
   /* background-image: url(assets/wave\ \(1\).svg);
   background-size: cover;
   background-repeat: no-repeat; */
