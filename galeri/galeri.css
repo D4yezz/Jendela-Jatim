@@ -14,13 +14,17 @@ html {
     --links-clr:#186f78;
     --text-clr:#3f7277;
     --warna-one: #40a2e3;
-    --warna-two: #8fd14f;
+    --warna-two: #38E54D;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
 }
+
+
+
+
 
 .gallery {
     width: 100%;
@@ -104,7 +108,6 @@ div.gallerykami .itemm {
     text-align: left;
     font-size: 2rem;
     color: var(--body-clr);
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     max-width: 20px;
 margin-right: 20px;
 }

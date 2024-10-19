@@ -7,131 +7,40 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="icon" href="../assets/ikon.png" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
     <title>Gallery</title>
   </head>
   <body>
     <!-- navbar -->
-    <header
-      class="position-relative"
-      style="z-index: 999; background-color: #000000"
-    >
-      <nav class="navbar navbar-expand-lg d-flex">
-        <div class="logo container-fluid w-50">
-          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
-        </div>
+    <header id="reset">
+      <nav class="navbar" style="background-color: black; padding: 20px;">
 
-        <!-- Navbar -->
-        <div class="container-fluid w-50 justify-content-end">
-          <button
-            class="navbar-toggler"
-            style="background-color:#40a2e3;"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
-                JendelaJatim
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+        <a href="#" class="logo">Jendela<span>Jatim</span></a>
+
+        <span class="toggler" style="color:#40a2e3 ;" onclick="toggleMenu()">&#9776;</span>
+
+
+        <ul id="navbar" >
+          <li class="llist"><a href="../index.html">Home</a></li>
+          <li class="llist"><a href="../index.html#destinasi">Destinasi</a></li>
+          <li class="llist"><a href="#">Gallery</a></li>
+          <li class="llist"><a href="../index.html#contact">Contact</a></li>
+          <li class="dropdown" class="llist">
+            <a href="#" class="dropbtn">List Destinasi</a>
+            <div class="dropdown-content" >
+              <a href="../index.html#bromo" style="text-decoration: none;">Gunung Bromo</a>
+
+              <a href="../index.html#kawah" style="text-decoration: none;">Kawah Ijen</a>
+
+              <a href="../index.html#tumpak" style="text-decoration: none;">Air Terjun Tumpak Sewu</a>
+              <a href="../index.html#balekambang" style="text-decoration: none;">Pantai Balekambang</a>
+              <a href="../index.html#baluran" style="text-decoration: none;">Taman Nasional Baluran</a>
             </div>
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
-              >
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html"
-                    style="color: #8fd14f"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html#destinasi"
-                    style="color: #8fd14f"
-                    >Destinasi</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#"
-                    style="color: #8fd14f"
-                    >Galery</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html#contact"
-                    style="color: #8fd14f"
-                    >Contact</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle active"
-                    href="#list"
-                    style="color: #8fd14f"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >List Destinasi</a
-                  >
-                  <ul class="dropdown-menu" id="list">
-                    <li>
-                      <a href="../index.html#bromo" class="dropdown-item"
-                        >Gunung Bromo</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#kawah" class="dropdown-item"
-                        >Kawah Ijen</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#tumpak" class="dropdown-item"
-                        >Air Terjun Tumpak Sewu</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#balekambang" class="dropdown-item"
-                        >Pantai Balekambang</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#baluran" class="dropdown-item"
-                        >Taman Nasional Baluran</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- konten galeri -->
@@ -387,6 +296,7 @@
         <!-- galeri section end -->
       </main>
     </section>
+    <a href="#reset" class="top-tbl"> <i class="fa fa-arrow-up"></i></a>
 
     <!-- JQuery link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -411,5 +321,6 @@
       });
     </script>
   </body>
+  <script src="../script.js"></script>
   <script src="../js/bootstrap.bundle.js"></script>
 </html>

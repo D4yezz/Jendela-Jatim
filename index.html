@@ -13,121 +13,32 @@
     />
   </head>
   <body>
-    <header class="position-relative" style="z-index: 999" id="atas">
-      <nav class="navbar navbar-expand-lg d-flex">
-        <div class="logo container-fluid w-50">
-          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
-        </div>
+    <header id="reset">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="#" class="logo">Jendela<span>Jatim</span></a>
 
-        <!-- Navbar -->
-        <div class="container-fluid w-50 justify-content-end">
-          <button
-            class="navbar-toggler"
-            style="background-color: #40a2e3"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarOffcanvasLg"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="navbarOffcanvasLg"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
-                JendelaJatim
-              </h5>
-              <button
-              
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+        <span class="toggler" onclick="toggleMenu()">&#9776;</span>
+
+        <!-- Navbar links -->
+        <ul id="navbar" >
+          <li class="llist"><a href="#">Home</a></li>
+          <li class="llist"><a href="#destinasi">Destinasi</a></li>
+          <li class="llist"><a href="galeri/gallery.html">Gallery</a></li>
+          <li class="llist"><a href="#contact">Contact</a></li>
+          <li class="dropdown" class="llist">
+            <a href="#" class="dropbtn">List Destinasi</a>
+            <div class="dropdown-content">
+              <a href="#bromo">Gunung Bromo</a>
+
+              <a href="#kawah">Kawah Ijen</a>
+
+              <a href="#tumpak">Air Terjun Tumpak Sewu</a>
+              <a href="#balekambang">Pantai Balekambang</a>
+              <a href="#baluran">Taman Nasional Baluran</a>
             </div>
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
-              >
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#"
-                    style="color: #8fd14f"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="#destinasi"
-                    style="color: #8fd14f"
-                    >Destinasi</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="galeri/gallery.html"
-                    style="color: #8fd14f"
-                    >Galery</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="#contact"
-                    style="color: #8fd14f"
-                    >Contact</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#list"
-                    style="color: #8fd14f"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >List Destinasi</a
-                  >
-                  <ul class="dropdown-menu" id="list">
-                    <li>
-                      <a href="#bromo" class="dropdown-item">Gunung Bromo</a>
-                    </li>
-                    <li>
-                      <a href="#kawah" class="dropdown-item">Kawah Ijen</a>
-                    </li>
-                    <li>
-                      <a href="#tumpak" class="dropdown-item"
-                        >Air Terjun Tumpak Sewu</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#balekambang" class="dropdown-item"
-                        >Pantai Balekambang</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#baluran" class="dropdown-item"
-                        >Taman Nasional Baluran</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -273,8 +184,8 @@
         <!-- next prev -->
 
         <div class="arrows">
-          <button id="prev"><</button>
-          <button id="next">></button>
+          <button id="prev">◀</button>
+          <button id="next">▶</button>
         </div>
         <!-- time running -->
         <div class="time"></div>
@@ -283,7 +194,7 @@
     <!-- Akhir dari div class="carousel" -->
 
     <!-- tombol keatas -->
-    <a href="#atas" class="top-tbl"> <i class="fa fa-arrow-up"></i></a>
+    <a href="#reset" class="top-tbl"> <i class="fa fa-arrow-up"></i></a>
 
     <!-- Section Destinasi -->
     <section class="destinasi vh-500" id="destinasi">
@@ -462,7 +373,7 @@
               <i class="fa fa-envelope"></i>
 
               <h3>Email</h3>
-              <h4>jendelajatim<br>@gmail.com</h4>
+              <h4>jendelajatim<br />@gmail.com</h4>
             </div>
             <div class="phone kotak">
               <i class="fa fa-phone"></i>
@@ -512,21 +423,51 @@
           />
         </div>
         <div class="list-kota">
-          <ul class="footer-kota ">
+          <ul class="footer-kota">
             <h3>Kota</h3>
-            <li><a href="https://maps.app.goo.gl/tdfX6rx5q36uU2tm9">Surabaya</a></li>
-            <li><a href="https://maps.app.goo.gl/AaGXYKUpAjp85V8d8">Malang</a></li>
-            <li><a href="https://maps.app.goo.gl/CNcUumMZZotyFEM27">Banyuwangi</a></li>
-            <li><a href="https://maps.app.goo.gl/MuTZVq5mgdtxtoWp7">Pasuruan</a></li>
-            <li><a href="https://maps.app.goo.gl/1uip6KMYbBJtp7tW8">Pacitan</a></li>
+            <li>
+              <a href="https://maps.app.goo.gl/tdfX6rx5q36uU2tm9">Surabaya</a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/AaGXYKUpAjp85V8d8">Malang</a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/CNcUumMZZotyFEM27">Banyuwangi</a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/MuTZVq5mgdtxtoWp7">Pasuruan</a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/1uip6KMYbBJtp7tW8">Pacitan</a>
+            </li>
           </ul>
           <ul class="footer-kabupaten">
             <h3>Kabupaten</h3>
-            <li><a href="https://maps.app.goo.gl/3RuahyAXQdgZN3Ns8">Kabupaten Malang</a></li>
-            <li><a href="https://maps.app.goo.gl/1vqRyixiaRGVhMkZ9">Kabupaten Bangkalan</a></li>
-            <li><a href="https://maps.app.goo.gl/wDWWZjaC5aXaVP1D9">Kabupaten Banyuwangi</a></li>
-            <li><a href="https://maps.app.goo.gl/dN27zwE7MitDnibP6">Kabupaten Jember</a></li>
-            <li><a href="https://maps.app.goo.gl/39fjq6fPFNJ38rNB7">Kabupaten Lamongan</a></li>
+            <li>
+              <a href="https://maps.app.goo.gl/3RuahyAXQdgZN3Ns8"
+                >Kabupaten Malang</a
+              >
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/1vqRyixiaRGVhMkZ9"
+                >Kabupaten Bangkalan</a
+              >
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/wDWWZjaC5aXaVP1D9"
+                >Kabupaten Banyuwangi</a
+              >
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/dN27zwE7MitDnibP6"
+                >Kabupaten Jember</a
+              >
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/39fjq6fPFNJ38rNB7"
+                >Kabupaten Lamongan</a
+              >
+            </li>
           </ul>
         </div>
       </div>
