@@ -185,7 +185,7 @@ a {
 }
 .carousel .list .item .content {
   position: absolute;
-  top: 25%;
+  top: 30%;
   width: 1140px;
   max-width: 70%;
   left: 40%;
@@ -395,7 +395,7 @@ a {
   height: 5px;
   background-color: var(--warna-two);
   left: 0;
-  top: 115px;
+  top: 154px;
   bottom: 10px;
   right: 100px;
 }
