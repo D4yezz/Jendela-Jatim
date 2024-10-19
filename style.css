@@ -546,9 +546,9 @@ a {
   /* background-color: pink; */
   margin-bottom: 20px;
   color: white;
-  max-height: 200px; /* Atur tinggi tetap sesuai kebutuhan */
-  overflow-y: auto; /* Aktifkan scroll vertikal */
-  padding-right: 10px; /* Tambahkan padding untuk menghindari overlap dengan scrollbar */
+  max-height: 200px; 
+  overflow-y: auto; 
+  padding-right: 10px; 
 }
 
 .destinasi .img-konten {
@@ -863,7 +863,7 @@ footer h3 {
 
 .teks-footer {
   width: 30%;
-  margin: 40px 40px 40px 0;
+  margin: 20px 40px 40px 0;
 }
 
 .teks-footer img {
@@ -914,7 +914,7 @@ footer h3 {
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
-  background-color: #000000; /* Warna latar belakang yang lebih terang */
+  background-color: #000000; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

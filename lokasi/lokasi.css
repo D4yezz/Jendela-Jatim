@@ -270,8 +270,8 @@ iframe {
 
 @media (max-width: 880px) {
   .kartu {
-    margin: auto; /* Kurangi margin untuk layar kecil */
-    padding: 20px; /* Sesuaikan padding jika perlu */
-    width: 120%; /* Pastikan lebar menyesuaikan dengan layar */
+    margin: auto; 
+    padding: 20px; 
+    width: 120%; 
   }
 }
