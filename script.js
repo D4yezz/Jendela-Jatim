@@ -56,6 +56,7 @@ function showSlider(type) {
   }, timeAutoNext);
 }
 
+<<<<<<< HEAD
 // document.querySelectorAll(".offcanvas .nav-link .btn-close").forEach((link) => {
 //   link.addEventListener("click", function () {
 //     e.preventDefault();
@@ -65,6 +66,39 @@ function showSlider(type) {
 //   });
 // });
 
+=======
+function toggleMenu() {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("show");
+}
+
+// let lastScrollTop = 0;
+// const navbar = document.getElementById('navbar');
+
+// window.addEventListener('scroll', function() {
+//   const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+//   if (scrollTop > lastScrollTop) {
+//     // Scrolling down
+//     navbar.style.top = '-80px';  // Hide the navbar (adjust the value based on navbar height)
+//   } else {
+//     // Scrolling up
+//     navbar.style.top = '0';
+//   }
+
+//   lastScrollTop = scrollTop;
+// });
+
+// document.querySelectorAll(".offcanvas .nav-link .btn-close").forEach((link) => {
+//   link.addEventListener("click", function () {
+//     e.preventDefault();
+//     const offcanvasElement = document.querySelector("#navbarOffcanvasLg");
+//     const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+//     offcanvasInstance.hide();
+//   });
+// });
+
+>>>>>>> cad7e329656ee5f0c25cbc2db7997476d62972bf
 // document.querySelectorAll(".offcanvas .nav-link").forEach((link) => {
 //   link.addEventListener("click", function () {
 //     const offcanvasElement = document.querySelector("#navbarOffcanvasLg");

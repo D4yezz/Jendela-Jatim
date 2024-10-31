@@ -16,232 +16,30 @@
     />
   </head>
   <body style="background-color: black ; font-family: 'Poppins';">
-    <!-- <header class="position-relative" style="z-index: 999">
-      <nav class="navbar navbar-expand-lg d-flex p-3">
-        <div class="logo container-fluid w-50">
-          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
-        </div>
+    <header id="reset">
+      <nav class="navbar" style="padding: 20px;">
+        <a href="#" class="logo">Jendela<span>Jatim</span></a>
 
-        <div class="container-fluid w-50 justify-content-end">
-          <button
-            class="navbar-toggler"
-            style="background-color: #40a2e3"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
-                JendelaJatim
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
-              >
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html#destinasi"
-                    >Destinasi</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Galery</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html#contact"
-                    >Contact</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle active"
-                    href="#list"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >List Destinasi</a
-                  >
-                  <ul class="dropdown-menu" id="list">
-                    <li>
-                      <a href="../index.html#destinasi" class="dropdown-item"
-                        >Gunung Bromo</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#kawah" class="dropdown-item"
-                        >Kawah Ijen</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#tumpak" class="dropdown-item"
-                        >Air Terjun Tumpak Sewu</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#balekambang" class="dropdown-item"
-                        >Pantai Balekambang</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#baluran" class="dropdown-item"
-                        >Taman Nasional Baluran</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header> -->
-    <header class="position-relative" style="z-index: 999" id="atas">
-      <nav class="navbar navbar-expand-lg d-flex">
-        <div class="logo container-fluid w-50">
-          <h1 class="fs-2 fw-bold">Jendela<span>Jatim</span></h1>
-        </div>
+        <span class="toggler" style="color: #40a2e3;" onclick="toggleMenu()">&#9776;</span>
 
-        <!-- Navbar -->
-        <div class="container-fluid w-50 justify-content-end">
-          <button
-            class="navbar-toggler"
-            style="background-color: #40a2e3"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarOffcanvasLg"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="navbarOffcanvasLg"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title fw-semibold" id="offcanvasNavbarLabel">
-                JendelaJatim
-              </h5>
-              <button
-              
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+        <ul id="navbar" >
+          <li class="llist"><a href="../index.html">Home</a></li>
+          <li class="llist"><a href="../index.html#destinasi">Destinasi</a></li>
+          <li class="llist"><a href="../galeri/gallery.html">Gallery</a></li>
+          <li class="llist"><a href="../index.html#contact">Contact</a></li>
+          <li class="dropdown" class="llist">
+            <a href="#" class="dropbtn">List Destinasi</a>
+            <div class="dropdown-content">
+              <a href="../index.html#bromo" style="text-decoration: none;">Gunung Bromo</a>
+
+              <a href="../index.html#kawah" style="text-decoration: none;">Kawah Ijen</a>
+
+              <a href="../index.html#tumpak" style="text-decoration: none;">Air Terjun Tumpak Sewu</a>
+              <a href="../index.html#balekambang" style="text-decoration: none;">Pantai Balekambang</a>
+              <a href="../index.html#baluran" style="text-decoration: none;">Taman Nasional Baluran</a>
             </div>
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5 fw-semibold"
-              >
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html"
-                    style="color: #8fd14f"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="../index.html#destinasi"
-                    style="color: #8fd14f"
-                    >Destinasi</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="../galeri/gallery.html"
-                    style="color: #8fd14f"
-                    >Galery</a
-                  >
-                </li>
-                <li class="nav-item pe-3" id="navigasi">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="../index.html#contact"
-                    style="color: #8fd14f"
-                    >Contact</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#list"
-                    style="color: #8fd14f"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >List Destinasi</a
-                  >
-                  <ul class="dropdown-menu" id="list">
-                    <li>
-                      <a href="../index.html#bromo" class="dropdown-item">Gunung Bromo</a>
-                    </li>
-                    <li>
-                      <a href="../index.html#kawah" class="dropdown-item">Kawah Ijen</a>
-                    </li>
-                    <li>
-                      <a href="../index.html#tumpak" class="dropdown-item"
-                        >Air Terjun Tumpak Sewu</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#balekambang" class="dropdown-item"
-                        >Pantai Balekambang</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../index.html#baluran" class="dropdown-item"
-                        >Taman Nasional Baluran</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -422,6 +220,8 @@
         </div>
       </div>
     </section>
+    <a href="#reset" class="top-tbl"> <i class="fa fa-arrow-up"></i></a>
   </body>
   <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../script.js"></script>
 </html>
