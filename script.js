@@ -56,7 +56,7 @@ function showSlider(type) {
   }, timeAutoNext);
 }
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // document.querySelectorAll(".offcanvas .nav-link .btn-close").forEach((link) => {
 //   link.addEventListener("click", function () {
 //     e.preventDefault();
@@ -66,7 +66,7 @@ function showSlider(type) {
 //   });
 // });
 
-=======
+// =======
 function toggleMenu() {
   const navbar = document.getElementById("navbar");
   navbar.classList.toggle("show");
@@ -98,7 +98,7 @@ function toggleMenu() {
 //   });
 // });
 
->>>>>>> cad7e329656ee5f0c25cbc2db7997476d62972bf
+// >>>>>>> cad7e329656ee5f0c25cbc2db7997476d62972bf
 // document.querySelectorAll(".offcanvas .nav-link").forEach((link) => {
 //   link.addEventListener("click", function () {
 //     const offcanvasElement = document.querySelector("#navbarOffcanvasLg");
